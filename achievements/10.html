@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from mhmscal.org/achievements/10 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Mar 2025 10:02:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title> 
+    Achievements - Mansur Habibullah Memorial School  </title>
+
+  <!-- Bootstrap -->
+  <link href="../assets_frontend/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets_frontend/css/half-slider.css" rel="stylesheet">
+  <link href="../assets_frontend/css/style.css" rel="stylesheet">
+  <link href="../assets_frontend/css/timeline.css" rel="stylesheet">
+  <link href="../assets_frontend/css/ekko-lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+<style>#myCarousel{height:600px;} 
+.newsbg {
+ 
+  background: url('../assets_frontend/images/newsbg-new3a1c.jpg?v=.1');
+}
+.sidemenu li a {
+  background: #80231c;
+}
+
+
+.float-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.float-button:hover {
+  background-color: #1a8d5f;
+}
+
+.float-button i {
+  font-size: 24px;
+}
+
+</style>
+</head>
+
+<body >
+
+  <!-- Sliding div starts here -->
+  <div class="hidden-xs" id="slider" style="right:-342px;">
+    <div id="sidebar" onclick="open_panel()">
+      <img src="../assets_frontend/images/contact.png"/>
+    </div>
+    <div id="header">
+      <form onsubmit="getContact(); return false;">
+        <div id="contact_results"></div>
+        <div id="contact_body">
+          <input type="hidden" name="submit_mode" id="submit_mode" value="Yes">
+          <input type="hidden" name="ret_val" id="ret_val">
+          <div id="smsg"><div id="con_title">CONTACT FORM</div></div>
+          <label>
+            <span>Name <span class="required">*</span></span>
+            <input type="text" name="name" id="name" class="input-field" required>
+          </label>
+          <label>
+            <span>Email <span class="required">*</span></span>
+            <input type="email" name="email" id="email" class="input-field" required>
+          </label>
+          <label>
+            <span>Phone <span class="required">*</span></span>
+            <input type="text" name="phone2" id="phone2" maxlength="10" class="input-field" required>
+          </label>
+          <label>
+            <span>Subject <span class="required">*</span></span>
+            <select name="conatact_email" id="conatact_email" class="input-field select-field" required>
+              <option value="" selected="selected">Select</option>
+                            <option value="1">Admissions</option>
+                            <option value="2">Parent Feedback</option>
+                            <option value="3">Transport</option>
+                            <option value="4">Career Counselling</option>
+                          </select>
+          </label>
+            <label for="field5"><span>Message <span class="required">*</span></span>
+            <textarea name="message" id="message" class="textarea-field" required></textarea>
+          </label>
+          <label>
+            <button type="submit" id="submit_btn">Submit</button>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Sliding div ends here -->
+
+  <div class="contact-sm-bar">
+    <a href="tel:033 2471 2220"><div class="phone-rnd"></div></a>
+    <a href="../contactus.html"><div class="contact-rnd"></div></a>
+  </div>
+
+  <header class="header clearfix">
+    <div class="main-header stricky bubble">
+      <div class="container-fluid">
+        <div class="row">
+        	<a class="col-sm-12 col-md-4 col-lg-3" href="../index.html">
+                        <img src="../logo_upload/thumb_New_Project(1).png" alt="Mansur Habibullah Memorial School" class="logo pull-left">
+                      </a>
+          <div class="col-sm-12 col-md-8 col-lg-9 hidden-xs hidden-sm">
+            <div class="nav-outer">
+              <div class="header-top">
+              	<div class="contact"><a href="../aboutus.html"><span class="glyphicon glyphicon-home"></span>About Us</a></div>
+              	<div class="contact"><a href="../contactus.html"><span class="glyphicon glyphicon-envelope"></span>Contact Us</a></div>
+                <div class="contact"><a href="https://www.eduqfix.com/PayDirect/#/student/pay/fuGOaBHkXogAQz5SXQT6hAPTEMkBaefBo976mwsDQw6g+P1kAuPTJX54fkc49sGi/2858" target="_blank"><span class="glyphicon glyphicon-user"></span>Pay Online Fees</a></div>
+                <div class="contact"><a href="../career.html"><span class="glyphicon glyphicon-lock"></span>Career</a></div>
+                <div class="contact"><a href="https://www.facebook.com/profile.php?id=100071167493858" target="_blank"><span class="glyphicon glyphicon-user""><img src="../assets_frontend/images/faceicon.png"></a></div></span>
+                <div class="contact"><a href="#"><img src="../assets_frontend/images/gplsicon.png"></a></div>
+                <div class="contact"><a href="https://www.youtube.com/channel/UCcQaT3aDKuMcLrNH9csAi_g" target="_blank"><span class="glyphicon glyphicon-user"</span><img src="../assets_frontend/images/ytubicon.png"></a></div></span>
+              </div>
+              <nav class="mainmenu-area">
+                <div class="navbar" role="navigation">
+                	<div class="navbar-collapse collapse text-center">  
+                  <ul>
+                      <li><a href="https://www.eduqfix.com/PayDirect/#/student/pay/fuGOaBHkXogAQz5SXQT6hAPTEMkBaefBo976mwsDQw6g+P1kAuPTJX54fkc49sGi/2858" target="_blank" style="background:#f62129;color:#fff;">Pay Online Fees</a></li>
+                    <li>
+                      <a href="../campusfacilities.html">Campus Facilities</a>
+                    </li>
+                    <li class="dropdown hidden"><a href="#">Curriculum</a>
+                      <ul class="submenu">
+                        <li><a href="../curriculum.html">Curriculum Guidelines</a></li>
+                        <li><a href="../almanac.html">Almanac</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Gallery</a>
+                      <ul class="submenu">
+                        <li><a href="../campusfacilities.html">Campus</a></li>
+                        <li><a href="../events.html">Events</a></li>
+                      </ul>
+                    </li>
+                                       <li class="dropdown hidden"><a href="../circulars/10.html">Circulars</a>
+                                              </li>
+                    <li class="dropdown"><a href="#">Achievements</a>
+                        <ul class="submenu">
+                                                    <li class="dropdown"><a href="10.html">2023-2024</a>
+                          </li>
+                                                </ul>
+                    </li>
+ <li class="dropdown"><a href="../kids.html">Pre Primary</a>
+                            
+                    </li>
+                    <li><a href="../admission.html">Admission</a></li>
+                    
+                  </ul>  
+                </div> 
+                </div>
+              </nav>
+            </div>
+          </div> 
+        </div>      
+      </div>
+    </div>
+  </header>
+<a href="#" class="toggle-panel col-sm-12 visible-xs visible-sm"><i class="glyphicon glyphicon-menu-hamburger"></i> Navigation Menu (Tap to Open)</a>
+  <div id="myCarousel" class="carousel slide carousel-fade" style="height: auto;">
+      <div class="carousel-inner">
+                    <div class="item active">
+            
+            
+            <img src="../logo_upload/school-building1-23.jpg" style="width:100%;" />
+            
+            
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/cnsrt-3-23.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/pre-nursery1.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/consrt-nur23.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/chem-lab2023.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/comp-lab-new-23.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/earth-day-1.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/physic-lab-23.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/YOGA23.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/lib3.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/Primary-student.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/consert-pn.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/convocation1.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/rabindra-jayanti1.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/YOGA2.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/isc-toppers-2024-Recovered.jpg" style="width:100%;" />
+            </div>
+                                <div class="item">
+                       <img src="../logo_upload/icse-toppers-2024.jpg" style="width:100%;" />
+            </div>
+                            
+      </div>
+  </div>
+  
+<div id="nav-panel">
+  <ul>
+      <li><a href="https://www.eduqfix.com/PayDirect/#/student/pay/fuGOaBHkXogAQz5SXQT6hAPTEMkBaefBo976mwsDQw6g+P1kAuPTJX54fkc49sGi/2858" target="_blank" style="background:#f62129;color:#fff;">Pay Online Fees</a></li>
+    <li><a href="../kids.html">Pre-Primary</a></li>
+    <li><a href="../campusfacilities.html">Campus Facilities</a></li>
+    <li class="hidden"><a href="../curriculum.html">Curriculum</a></li>
+    <li class="hidden"><a href="javascript:;">Result</a></li>
+        <li class="hidden"><a href="javascript:;">Circulars</a></li>
+        <li class="sub-menu"><a href="../circulars/10.html">2023-2024</a></li>
+        <li><a href="javascript:;">Achievements</a></li>
+        <li class="sub-menu"><a href="10.html">2023-2024</a></li>
+        <li><a href="../events.html">Gallery</a></li>
+    <li><a href="../admission.html">Admission</a></li>
+    <li><a href="../career.html">Career</a></li>
+    
+  </ul>
+</div><div class="container missionar">
+  <div class="row">
+    <div class="col-sm-12 col-md-3">
+	<h4>Achievements </h4>
+      <ul class="nav nav-pills nav-stacked sidemenu">
+        <li  class="active"><a href="10/intra-school-activities.html">Intra School Activies</a></li>
+        <li ><a href="10/inter-school-activities.html">Inter School Activies</a></li>
+      </ul>
+
+    </div>
+
+    <div class="col-sm-12 col-md-9 tabinterface">
+    <h4>&nbsp;</h4>
+	      <div id="tabs" class="mytabsec">
+        <ul>
+                
+        </ul>
+              </div>    
+      
+      
+      
+            
+      
+      
+    </div>
+    
+  </div>
+</div>
+
+    
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-4">
+        <h3>Address</h3>
+        <p>
+        31, Chandi Ghosh Road, Kudghat, Tollygunge, Kolkata - 700040<br/>
+        Admission Counselling : <br/>
+        Office : 033 2471 2220<br/>
+        Email : <a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="1e7376736d7d7f725e79737f7772307d7173">[email&#160;protected]</a><br/>
+        Email (Admission Counselling) : <br/>
+        Website : <a href="../index.html">http://www.mhmscal.org</a>
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-3">
+          <h3>Links</h3>
+          <ul class="ftrlist"> 
+            <li><a href="../aboutus.html">About Us</a></li>                   
+            <li><a href="../campusfacilities.html">Campus Facilities</a></li>
+            <li><a href="../curriculum.html">Curriculum</a></li>
+            <li><a href="../events.html">Gallery</a></li>
+          </ul>
+          <ul class="ftrlist">           
+            <li><a href="../almanac.html">Almanac</a></li>  
+            <li><a href="../admission.html">Admission</a></li>
+            <li><a href="../career.html">Career</a></li>
+            <li><a href="../contactus.html">Contact Us</a></li>
+          </ul>
+          <div class="clearfix"></div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+          <h3>School Newsletter</h3>
+          <div class="followtxt">	
+            <a href="../newsletter.html">View our Newsletter <br> ( :  )</a>
+          </div>
+          <h3>Information</h3>
+          <ul class="ftrlist">              
+              <li><a href="../admission.html">New Admission</a></li>
+          </ul>
+          <div class="clearfix"></div>
+      </div>
+      <div class="col-sm-12 col-md-2">
+          <h3>Social Connect</h3>
+          <div class="followtxt">
+              <a href="https://www.facebook.com/profile.php?id=100071167493858" target="_blank"><span class="glyphicon glyphicon-user""><img src="../assets_frontend/images/faceicon.png"></a></span>
+              <a href="#"><img src="../assets_frontend/images/gplsicon.png"></a>
+              <a href="https://www.youtube.com/channel/UCcQaT3aDKuMcLrNH9csAi_g" target="_blank"><span class="glyphicon glyphicon-user""><img src="../assets_frontend/images/ytubicon.png"></a></span>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="ftrbtmbg">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center"><div class="ftrcopyr"></div></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="loading" class="loading">Loading&#8230;</div>
+
+
+
+
+<div class="modal" id="popupmod" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+       <a href="../pdf_upload/CRITERIA_FOR_DIST_OF_FORMS-XI_2025-20261.pdf" target="_blank"> <img src="../assets/Infrastructure/a0ab65a6-ef87-403f-80e8-96d54143359b.jpg" alt="For admission in class XI" loading="lazy" style="width:100%;">  </a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../assets_frontend/js/bootstrap.min.js"></script>
+<script src="../assets_frontend/js/jquery.mobile.custom.min.js"></script>
+<script src="../assets_frontend/js/timeline.js"></script>
+<script src="../assets_frontend/js/ekko-lightbox.js"></script>
+<script src="../assets_frontend/js/jquery.bxslider.min.js"></script>
+<script src="../assets_frontend/js/jquery.als-1.7.min.js"></script>
+<script src="../assets_frontend/js/scotchPanels.min.js"></script>
+<script src="../assets_frontend/js/slider.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+
+  $("#loading").hide();
+
+  var _scroll = true, _timer = false, _floatbox = $("#contact_form"), _floatbox_opener = $(".contact-opener") ;
+  _floatbox.css("right", "-320px"); //initial contact form position
+  //Contact form Opener button
+  _floatbox_opener.click(function(){
+    if (_floatbox.hasClass('visiable')){
+            _floatbox.animate({"right":"-320px"}, {duration: 300}).removeClass('visiable');
+        }else{
+           _floatbox.animate({"right":"0px"},  {duration: 300}).addClass('visiable');
+        }
+  });
+  //Effect on Scroll
+  $(window).scroll(function(){
+    if(_scroll){
+      _floatbox.animate({"top": "30px"},{duration: 300});
+      _scroll = false;
+    }
+    if(_timer !== false){ clearTimeout(_timer); }           
+      _timer = setTimeout(function(){_scroll = true; 
+      _floatbox.animate({"top": "10px"},{easing: "linear"}, {duration: 500});}, 400); 
+  });
+  
+  //Ajax form submit
+  $("#submit_btn").click(function() { 
+      var proceed = true;
+      //simple validation at client's end
+      //loop through each field and we simply change border color to red for invalid fields       
+      $("#contact_form input[required=true], #contact_form textarea[required=true]").each(function(){
+          $(this).css('border-color',''); 
+          if(!$.trim($(this).val())){ //if this field is empty 
+              $(this).css('border-color','red'); //change border color to red   
+              proceed = false; //set do not proceed flag
+          }
+          //check invalid email
+          var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
+          if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
+              $(this).css('border-color','red'); //change border color to red   
+              proceed = false; //set do not proceed flag              
+          }   
+      });
+     
+      if(proceed) //everything looks good! proceed...
+      {
+          //get input field values data to be sent to server
+          post_data = {
+              'user_name'     : $('input[name=name]').val(), 
+              'user_email'    : $('input[name=email]').val(), 
+              'country_code'  : $('input[name=phone1]').val(), 
+              'phone_number'  : $('input[name=phone2]').val(), 
+              'subject'       : $('select[name=subject]').val(), 
+              'msg'           : $('textarea[name=message]').val()
+          };
+          
+          //Ajax post data to server
+          $.post('contact_me.html', post_data, function(response){  
+              if(response.type == 'error'){ //load json data from server and output message     
+                  output = '<div class="error">'+response.text+'</div>';
+              }else{
+                  output = '<div class="success">'+response.text+'</div>';
+                  //reset values in all input fields
+                  $("#contact_form  input[required=true], #contact_form textarea[required=true]").val(''); 
+              }
+              $("#contact_form #contact_results").hide().html(output).slideDown();
+          }, 'json');
+      }
+  });
+  
+  //reset previously set border colors and hide all message on .keyup()
+  $("#contact_form  input[required=true], #contact_form textarea[required=true]").keyup(function() { 
+      $(this).css('border-color',''); 
+      $("#result").slideUp();
+  });
+
+  $("#tabs").tabs({
+    beforeLoad: function( event, ui ) {
+      ui.jqXHR.fail(function() {
+        ui.panel.html(
+          "Couldn't load this tab. We'll try to fix this as soon as possible. " +
+          "If this wouldn't be a demo." );
+      });
+    }
+  });
+
+  var navPanel = $('#nav-panel').scotchPanel({
+    containerSelector: 'body',
+    direction: 'left',
+    duration: 300,
+    transition: 'ease',
+    distanceX: '70%',
+    enableEscapeKey: true
+  });
+
+  $('.toggle-panel').click(function() {
+      navPanel.toggle();
+      return false;
+  });
+
+  $('#myCarousel').carousel({
+     interval: 3000
+  });
+
+  $("#our-gallery").als({ 
+    circular: "yes", 
+    autoscroll: "yes"
+  });
+
+  $("#our-awards").als({ 
+    circular: "yes", 
+    autoscroll: "yes"
+  });
+  
+  $(".close").click(function(){
+     $(".alert").alert();
+  });
+
+  $('#quotes').bxSlider({
+    auto: true, 
+    mode: 'fade',
+    touchEnabled: true,
+    pager: false,
+    controls: false,
+    autoHover: true
+  });
+
+  $('#quotes2').bxSlider({
+    auto: true, 
+    mode: 'fade',
+    touchEnabled: true,
+    pager: false,
+    controls: false,
+    autoHover: true
+  });
+});
+function goToPage(value){
+  if(value!='') {
+    location.href = value;
+    $("#nav-dropdown").val('');
+  }
+}
+
+// Prety Photo
+jQuery(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    jQuery(this).ekkoLightbox();
+});
+
+function getImage(ID,NAME,VAL,CONTENT){
+
+  $("#loading").show();
+  
+  var actid = $("#actid").val();
+  $("#row_"+actid).removeClass("active");
+  $.post("../home/ajaxImage.html",{ campusfacilities_id : ID},
+    function(data){
+      $("#ImageSet").html(data);
+      $("#row_"+VAL).addClass("active");
+      $("#nameType").html("Campus : "+NAME);
+	    $("#contentType").html(CONTENT);
+      $("#actid").val(VAL);
+	    $("#loading").hide();
+    });
+}
+
+function getHidegallery(){
+	//$("#loading").hide();
+}
+
+function getTeamImage(ID,VAL){
+  $("#loading").show();
+
+  $.post("../home/ajaxTeamImage.html",{ team_id : ID, VAL : VAL},
+    function(data){
+        $("#TeamImageShow").html(data);
+        $("#row_"+ID).addClass("active");
+        $("#loading").hide();
+    });
+}
+
+function getCurriculumPDF(ID,NAME,VAL){
+  $("#loading").show();
+  
+  var hid_id = $("#hid_id").val();
+  $("#row_"+hid_id).removeClass("active");
+  $.post("../home/ajaxCurriculumPDF.html",{curriculum_id : ID},
+  function(data){
+    $("#curriculumPDF").html(data);
+    $("#row_"+VAL).addClass("active");
+    $("#c_name").html("Curriculum : "+NAME);
+    $("#hid_id").val(VAL);
+	  $("#loading").hide();
+  });
+}
+
+function getCircularPDF(ID,s_id,VAL){
+  $("#loading").show();
+  
+  $.post("../home/ajaxCircularPDF.html",{gdiv_id : ID, s_id :s_id, VAL : VAL},
+  function(data){
+    $("#circularPDF_"+VAL).html(data);
+	  $("#loading").hide();
+  });
+}
+
+function getAchievementPDF(ID,s_id,activity_type,VAL){
+  $("#loading").show();
+  
+  $.post("../home/ajaxAchievementPDF.html",{activity_id : ID, s_id :s_id, activity_type : activity_type, VAL : VAL},
+  function(data){
+     $("#achievementPDF_"+VAL).html(data);
+	   $("#loading").hide();
+  });
+}
+
+function getContact(){
+	var submit_mode = $("#submit_mode").val();
+	var name = $("#name").val();
+	var email = $("#email").val();
+	var phone = $("#phone2").val();
+	var conatact_email = $("#conatact_email").val();
+	var message = $("#message").val();
+	
+	$.post("../home/ajaxContact.html",{submit_mode : submit_mode, name : name, email : email, phone : phone, conatact_email : conatact_email, message : message},
+	function(data){
+	  $("#smsg").html(data);
+    $("#message").val('');
+    $("#name").val('');
+    $("#email").val('');
+    $("#phone2").val('');
+	});
+}
+
+</script>
+<script>
+    $(document).ready(function(){
+  $(".testimonial .indicators li").click(function(){
+    var i = $(this).index();
+    var targetElement = $(".testimonial .tabs li");
+    targetElement.eq(i).addClass('active');
+    targetElement.not(targetElement[i]).removeClass('active');
+            });
+            $(".testimonial .tabs li").click(function(){
+                var targetElement = $(".testimonial .tabs li");
+                targetElement.addClass('active');
+                targetElement.not($(this)).removeClass('active');
+            });
+        });
+$(document).ready(function(){
+    $(".slider .swiper-pagination span").each(function(i){
+        $(this).text(i+1).prepend("0");
+    });
+});
+
+
+$('#popupmod').modal("show");
+
+</script>
+
+
+<a class="float-button" href="https://wa.me/+919830094004" target="_blank">
+  <img src="../assets_frontend/images/124034.png" style="width:48px;">
+</a>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9202ee57ded7b91e',t:'MTc0MTk0NjUwMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../cdn-cgi/challenge-platform/h/g/scripts/jsd/f3b948d8acb8/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+<!-- Mirrored from mhmscal.org/achievements/10 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Mar 2025 10:02:47 GMT -->
+</html>
